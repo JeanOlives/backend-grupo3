@@ -133,7 +133,7 @@ begin
 	
 	update gr3_cliente
 		set 	
-			cli_estado = ''
+			cli_estado = 'V'
 		where	
 	   		cli_cedula = @i_cedula
 end
