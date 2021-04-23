@@ -1,0 +1,6 @@
+NOMBRE SP => ID DE TRANSACCION
+
+sp_gr3_cliente => 163030020
+sp_gr3_reporte => 163030021
+sp_gr3_producto => 163030022
+sp_gr3_factura => 163030023
