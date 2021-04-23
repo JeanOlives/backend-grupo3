@@ -133,7 +133,7 @@ begin
 	
 	update gr3_cliente
 		set 	
-			cli_estado = 'V'
+			cli_estado = ''
 		where	
 	   		cli_cedula = @i_cedula
 end
@@ -168,5 +168,10 @@ begin
    @i_num    = @w_error 
 end
 return @w_error
+
+
+
+
+
 
 
