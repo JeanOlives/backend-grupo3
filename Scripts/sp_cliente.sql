@@ -38,6 +38,21 @@ declare
 select @w_sp_name = 'sp_gr3_cliente'
 
 
+if @i_operacion = 'S'
+begin
+	begin
+	select 
+		'cedula'	=cli_cedula, 
+   		'nombre' 	=cli_nombre, 
+   		'apellido'	=cli_apellido, 
+   		'direccion'	=cli_direccion, 
+   		'telefono'	=cli_telefono
+	from gr3_producto 
+	where  cli_estado = 'V'
+	order by cli_cedula
+end
+end
+
 if @i_operacion = 'I'
 begin
 	
