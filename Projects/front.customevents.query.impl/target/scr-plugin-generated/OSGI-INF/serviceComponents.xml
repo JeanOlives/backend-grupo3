@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component enabled="true" name="com.cobiscorp.cobis.front.customevents.impl.query.executequery.ClienteQuery_Q_CLIETTTN_SG94">
+        <implementation class="com.cobiscorp.cobis.front.customevents.impl.query.executequery.ClienteQuery_Q_CLIETTTN_SG94"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.api.customization.IExecuteQuery"/>
+        </service>
+        <property name="query.id" type="String" value="Q_CLIETTTN_SG94"/>
+        <property name="query.version" type="String" value="1.0.0"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.front.customevents.impl.query.executequery.ClienteQuery_Q_CLIETTTN_SG94"/>
+    </scr:component>
+    <scr:component enabled="true" name="com.cobiscorp.cobis.front.customevents.impl.query.executequery.DetalleFacturaQuery_Q_DETACRUA_DQ58">
+        <implementation class="com.cobiscorp.cobis.front.customevents.impl.query.executequery.DetalleFacturaQuery_Q_DETACRUA_DQ58"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.api.customization.IExecuteQuery"/>
+        </service>
+        <property name="query.id" type="String" value="Q_DETACRUA_DQ58"/>
+        <property name="query.version" type="String" value="1.0.0"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.front.customevents.impl.query.executequery.DetalleFacturaQuery_Q_DETACRUA_DQ58"/>
+    </scr:component>
+    <scr:component enabled="true" name="com.cobiscorp.cobis.front.customevents.impl.query.executequery.ProductoQuery_Q_PRODCCTC_GC43">
+        <implementation class="com.cobiscorp.cobis.front.customevents.impl.query.executequery.ProductoQuery_Q_PRODCCTC_GC43"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.api.customization.IExecuteQuery"/>
+        </service>
+        <property name="query.id" type="String" value="Q_PRODCCTC_GC43"/>
+        <property name="query.version" type="String" value="1.0.0"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.front.customevents.impl.query.executequery.ProductoQuery_Q_PRODCCTC_GC43"/>
+    </scr:component>
+</components>
