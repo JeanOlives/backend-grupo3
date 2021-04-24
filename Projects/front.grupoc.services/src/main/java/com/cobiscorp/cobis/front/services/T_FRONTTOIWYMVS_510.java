@@ -1,6 +1,6 @@
 /*
  * Archivo: T_FRONTTOIWYMVS_510.java
- * Fecha: 2021-04-24T17:28:14Z
+ * Fecha: 2021-04-24T19:19:11Z
  *
  * Esta aplicacion es parte de los paquetes bancarios propiedad de COBISCORP.
  * Su uso no autorizado queda expresamente prohibido asi como cualquier

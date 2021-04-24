@@ -1,6 +1,6 @@
 /*
  * Archivo: T_FRONTCKYWUYUY_796.java
- * Fecha: 2021-04-24T17:27:31Z
+ * Fecha: 2021-04-24T19:18:08Z
  *
  * Esta aplicacion es parte de los paquetes bancarios propiedad de COBISCORP.
  * Su uso no autorizado queda expresamente prohibido asi como cualquier

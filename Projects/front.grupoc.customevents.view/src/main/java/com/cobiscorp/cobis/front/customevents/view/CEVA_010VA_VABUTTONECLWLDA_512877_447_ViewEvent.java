@@ -1,6 +1,6 @@
 /*
  * Archivo: VW_FACTURACIN_877_ViewEvent.java
- * Fecha: 24/04/2021 12:28:14
+ * Fecha: 24/04/2021 14:19:11
  *
  * Esta aplicacion es parte de los paquetes bancarios propiedad de COBISCORP.
  * Su uso no autorizado queda expresamente prohibido asi como cualquier
