@@ -1,6 +1,6 @@
 /*
  * Archivo: T_FRONTRSWJDXFZ_368.java
- * Fecha: 2021-04-24T17:22:08Z
+ * Fecha: 2021-04-24T19:13:32Z
  *
  * Esta aplicacion es parte de los paquetes bancarios propiedad de COBISCORP.
  * Su uso no autorizado queda expresamente prohibido asi como cualquier

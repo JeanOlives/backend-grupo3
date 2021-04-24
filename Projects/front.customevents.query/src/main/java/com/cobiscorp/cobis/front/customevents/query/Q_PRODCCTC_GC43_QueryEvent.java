@@ -1,6 +1,6 @@
 /*
  * Archivo: Q_PRODCCTC_GC43_QueryEvent.java
- * Fecha: 24/04/2021 12:22:10
+ * Fecha: 24/04/2021 14:13:34
  *
  * Esta aplicacion es parte de los paquetes bancarios propiedad de COBISCORP.
  * Su uso no autorizado queda expresamente prohibido asi como cualquier
