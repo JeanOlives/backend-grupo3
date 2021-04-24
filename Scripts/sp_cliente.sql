@@ -47,10 +47,9 @@ begin
    		'apellido'	=cli_apellido, 
    		'direccion'	=cli_direccion, 
    		'telefono'	=cli_telefono
-	from gr3_producto 
+	from gr3_cliente 
 	where  cli_estado = 'V'
 	order by cli_cedula
-end
 end
 
 if @i_operacion = 'I'
