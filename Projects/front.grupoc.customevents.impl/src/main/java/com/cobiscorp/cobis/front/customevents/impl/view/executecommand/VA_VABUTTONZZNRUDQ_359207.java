@@ -60,10 +60,10 @@ public class VA_VABUTTONZZNRUDQ_359207 implements IExecuteCommand {
 		try {
 			if (logger.isDebugEnabled()) {
 				logger.logDebug("Start executeCommand in VA_VABUTTONMUBVPNK_896230");
-				logger.logDebug("DMP ejecutando BLI... ");
+				logger.logDebug("GRUPO3 ejecutando BLI... ");
 			}
 			bliInsertarProducto.execute(arg0);
-			logger.logDebug("DMP termina ejecucion de BLI... ");
+			logger.logDebug("GRUPO3 termina ejecucion de BLI... ");
 		
 		} catch (Exception ex) {
 			DesignerManagerException.handleException(arg1.getMessageManager(), ex, logger);

@@ -42,9 +42,9 @@ public class ProductoQuery_Q_PRODCCTC_GC43 implements IExecuteQuery {
 	private static final ILogger logger = LogFactory.getLogger(ProductoQuery_Q_PRODCCTC_GC43.class);
 
 	@Reference(bind="setBliMostrarProductos" , 
-			unbind="unsetBliMostrarProductosn",
+			unbind="unsetBliMostrarProductos",
 			cardinality = ReferenceCardinality.MANDATORY_UNARY,
-			target = "(bli.id=BLI5931_bli_consultarcliente)")
+			target = "(bli.id=BLI3203_bli_mostarproducto)")
 	private IBLIExecutor bliMostrarProductos;
 	
 	private void setBliMostrarProductos(IBLIExecutor bliMostrarProductos){
