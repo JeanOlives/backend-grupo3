@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component enabled="true" name="com.cobiscorp.cobis.front.customevents.view.CEVA_010VA_VABUTTONECLWLDA_512877_447_ViewEvent">
+        <implementation class="com.cobiscorp.cobis.front.customevents.view.CEVA_010VA_VABUTTONECLWLDA_512877_447_ViewEvent"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.api.builder.ViewEventBuilder"/>
+        </service>
+        <property name="view.id" type="String" value="VW_FACTURACIN_877"/>
+        <property name="view.version" type="String" value="1.0.0"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.front.customevents.view.CEVA_010VA_VABUTTONECLWLDA_512877_447_ViewEvent"/>
+        <reference name="iExecuteCommandVA_VABUTTONECLWLDA_512877" interface="com.cobiscorp.designer.api.customization.IExecuteCommand" cardinality="1..1" policy="dynamic" target="(&amp;(view.id=VW_FACTURACIN_877)(view.version=1.0.0)(view.controlId=VA_VABUTTONECLWLDA_512877))" bind="setiExecuteCommandVA_VABUTTONECLWLDA_512877" unbind="unsetiExecuteCommandVA_VABUTTONECLWLDA_512877"/>
+    </scr:component>
+    <scr:component enabled="true" name="com.cobiscorp.cobis.front.customevents.view.CEVA_010VA_VABUTTONFKUAKJO_460877_339_ViewEvent">
+        <implementation class="com.cobiscorp.cobis.front.customevents.view.CEVA_010VA_VABUTTONFKUAKJO_460877_339_ViewEvent"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.api.builder.ViewEventBuilder"/>
+        </service>
+        <property name="view.id" type="String" value="VW_FACTURACIN_877"/>
+        <property name="view.version" type="String" value="1.0.0"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.front.customevents.view.CEVA_010VA_VABUTTONFKUAKJO_460877_339_ViewEvent"/>
+        <reference name="iExecuteCommandVA_VABUTTONFKUAKJO_460877" interface="com.cobiscorp.designer.api.customization.IExecuteCommand" cardinality="1..1" policy="dynamic" target="(&amp;(view.id=VW_FACTURACIN_877)(view.version=1.0.0)(view.controlId=VA_VABUTTONFKUAKJO_460877))" bind="setiExecuteCommandVA_VABUTTONFKUAKJO_460877" unbind="unsetiExecuteCommandVA_VABUTTONFKUAKJO_460877"/>
+    </scr:component>
+    <scr:component enabled="true" name="com.cobiscorp.cobis.front.customevents.view.CEVA_010VA_VABUTTONZZNRUDQ_359207_298_ViewEvent">
+        <implementation class="com.cobiscorp.cobis.front.customevents.view.CEVA_010VA_VABUTTONZZNRUDQ_359207_298_ViewEvent"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.api.builder.ViewEventBuilder"/>
+        </service>
+        <property name="view.id" type="String" value="VW_INGRESARRR_207"/>
+        <property name="view.version" type="String" value="1.0.0"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.front.customevents.view.CEVA_010VA_VABUTTONZZNRUDQ_359207_298_ViewEvent"/>
+        <reference name="iExecuteCommandVA_VABUTTONZZNRUDQ_359207" interface="com.cobiscorp.designer.api.customization.IExecuteCommand" cardinality="1..1" policy="dynamic" target="(&amp;(view.id=VW_INGRESARRR_207)(view.version=1.0.0)(view.controlId=VA_VABUTTONZZNRUDQ_359207))" bind="setiExecuteCommandVA_VABUTTONZZNRUDQ_359207" unbind="unsetiExecuteCommandVA_VABUTTONZZNRUDQ_359207"/>
+    </scr:component>
+</components>
