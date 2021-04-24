@@ -1,0 +1,85 @@
+<!-- Designer Generator v 7.2.0 - SPR 2020-24 4/12/2020 -->
+<html>
+ <head></head>
+ <body>
+  <div id="bc_VC_BUSCARPROD_668368" class="cb-breadcrumb" ng-if="!vc.isModal(this) && !vc.isDetailGrid(this) && !isDesignerInclude" ng-class="vc.viewState.VC_BUSCARPROD_668368.style"> 
+   <ol class="breadcrumb"> 
+    <li>Inicio</li> 
+    <li ng-repeat="breadcrumb in breadcrumbs.get() track by breadcrumb.path" ng-class="{ active: !$last }"> {{ breadcrumb.label | translate }} </li> 
+   </ol> 
+  </div> 
+  <!-- Inicio item VW_BUSCARPROT_401--> 
+  <div id="VC_BUSCARPROD_668368" ng-keydown="vc.viewState.keyDown($event)" class=" cb-view-container-root cb-view-container cb-group-layout" ng-class="{'container':!vc.isModal(this) && !vc.isDetailGrid(this) && !isDesignerInclude && true, 'container-fluid':vc.isModal(this) || isDesignerInclude || false, 'cb-invisible': !vc.loaded}"> 
+   <div id="G_BUSCARPRRD_366401" ng-show="vc.viewState.G_BUSCARPRRD_366401.visible" ng-class="vc.viewState.G_BUSCARPRRD_366401.style" class="cb-group cb-group-simple"> 
+    <div kendo-validator="G_BUSCARPRRD_366401" k-options="validatorOptions" id="G_BUSCARPRRD_366401_VAL"> 
+     <div class="form-vertical"> 
+      <div class="row"> 
+       <div class="col-xs-6" ng-show="vc.viewState.VA_CODIGONVMAEPQFB_423401.visible"> 
+        <div class="form-group" id="VA_CODIGONVMAEPQFB_423401_DIV"> 
+         <label for="VA_CODIGONVMAEPQFB_423401" title="{{vc.viewState.VA_CODIGONVMAEPQFB_423401.label|translate:vc.viewState.VA_CODIGONVMAEPQFB_423401.labelArgs}}" ng-show="vc.viewState.VA_CODIGONVMAEPQFB_423401.visible" class="control-label">{{vc.viewState.VA_CODIGONVMAEPQFB_423401.label|translate:vc.viewState.VA_CODIGONVMAEPQFB_423401.labelArgs}}</label> 
+         <div class="cb-control"> 
+          <input id="VA_CODIGONVMAEPQFB_423401" name="Producto_codigo" type="text" class="form-control" ng-model="vc.model.Producto.codigo" ng-disabled="vc.viewState.VA_CODIGONVMAEPQFB_423401.disabled || vc.viewState.VA_CODIGONVMAEPQFB_423401.disabledingroup" ng-show="vc.viewState.VA_CODIGONVMAEPQFB_423401.visible" ng-readonly="vc.viewState.VA_CODIGONVMAEPQFB_423401.readonly" ng-class="vc.viewState.VA_CODIGONVMAEPQFB_423401.style" data-cobis-group="Group,G_BUSCARPRRD_366401,0" ng-model-onblur data-validation-code="{{vc.viewState.VA_CODIGONVMAEPQFB_423401.validationCode}}" /> 
+         </div> 
+        </div> 
+       </div> 
+       <div class="col-xs-6" ng-show="vc.viewState.VA_VABUTTONCNIUFJL_673401.visible"> 
+        <div class="form-group"> 
+         <label class="control-label">&nbsp;</label> 
+         <div class="cb-control"> 
+          <button id="VA_VABUTTONCNIUFJL_673401" class="btn btn-default btn-block" ng-click="vc.executeCommand('VA_VABUTTONCNIUFJL_673401','VA_VABUTTONCNIUFJL_673401',validator,false, false,'', false)" ng-disabled="vc.viewState.VA_VABUTTONCNIUFJL_673401.disabled || vc.viewState.VA_VABUTTONCNIUFJL_673401.disabledingroup" ng-show="vc.viewState.VA_VABUTTONCNIUFJL_673401.visible" ng-class="vc.viewState.VA_VABUTTONCNIUFJL_673401.style"> {{vc.viewState.VA_VABUTTONCNIUFJL_673401.label|translate}} </button> 
+         </div> 
+        </div> 
+       </div> 
+       <div class="col-xs-12" ng-show="vc.viewState.VA_NOMBREDJRSXKUFD_520401.visible"> 
+        <div class="form-group" id="VA_NOMBREDJRSXKUFD_520401_DIV"> 
+         <label for="VA_NOMBREDJRSXKUFD_520401" title="{{vc.viewState.VA_NOMBREDJRSXKUFD_520401.label|translate:vc.viewState.VA_NOMBREDJRSXKUFD_520401.labelArgs}}" ng-show="vc.viewState.VA_NOMBREDJRSXKUFD_520401.visible" class="control-label">{{vc.viewState.VA_NOMBREDJRSXKUFD_520401.label|translate:vc.viewState.VA_NOMBREDJRSXKUFD_520401.labelArgs}}</label> 
+         <div class="cb-control"> 
+          <div id="VA_NOMBREDJRSXKUFD_520401" name="Producto_nombre" class="form-control cb-no-border" ng-show="vc.viewState.VA_NOMBREDJRSXKUFD_520401.visible" ng-class="vc.viewState.VA_NOMBREDJRSXKUFD_520401.style">
+            {{kendo.toString(vc.model.Producto.nombre, '')}} 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+       <div class="col-xs-12" ng-show="vc.viewState.VA_PRECIOOMPDIETKQ_489401.visible"> 
+        <div class="form-group" id="VA_PRECIOOMPDIETKQ_489401_DIV"> 
+         <label for="VA_PRECIOOMPDIETKQ_489401" title="{{vc.viewState.VA_PRECIOOMPDIETKQ_489401.label|translate:vc.viewState.VA_PRECIOOMPDIETKQ_489401.labelArgs}}" ng-show="vc.viewState.VA_PRECIOOMPDIETKQ_489401.visible" class="control-label">{{vc.viewState.VA_PRECIOOMPDIETKQ_489401.label|translate:vc.viewState.VA_PRECIOOMPDIETKQ_489401.labelArgs}}</label> 
+         <div class="cb-control"> 
+          <div id="VA_PRECIOOMPDIETKQ_489401" name="Producto_precio" class="form-control cb-no-border" ng-show="vc.viewState.VA_PRECIOOMPDIETKQ_489401.visible" ng-class="vc.viewState.VA_PRECIOOMPDIETKQ_489401.style">
+            {{kendo.toString(vc.model.Producto.precio, 'n')}} 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+       <div class="col-xs-6" ng-show="vc.viewState.VA_CANTIDADDVCMXBX_519401.visible"> 
+        <div class="form-group" id="VA_CANTIDADDVCMXBX_519401_DIV"> 
+         <label for="VA_CANTIDADDVCMXBX_519401" title="{{vc.viewState.VA_CANTIDADDVCMXBX_519401.label|translate:vc.viewState.VA_CANTIDADDVCMXBX_519401.labelArgs}}" ng-show="vc.viewState.VA_CANTIDADDVCMXBX_519401.visible" class="control-label">{{vc.viewState.VA_CANTIDADDVCMXBX_519401.label|translate:vc.viewState.VA_CANTIDADDVCMXBX_519401.labelArgs}}</label> 
+         <div class="cb-control"> 
+          <input id="VA_CANTIDADDVCMXBX_519401" name="Producto_cantidad" kendo-numeric-text-box k-spinners="false" k-step="0" datatypes-limit="N" k-decimals="vc.viewState.VA_CANTIDADDVCMXBX_519401.decimals" k-ng-delay="vc.afterInitData" k-format="vc.viewState.VA_CANTIDADDVCMXBX_519401.format" k-ng-model="vc.model.Producto.cantidad" ng-model="vc.tmpModel.Producto.cantidad" ng-disabled="vc.viewState.VA_CANTIDADDVCMXBX_519401.disabled || vc.viewState.VA_CANTIDADDVCMXBX_519401.disabledingroup" ng-show="vc.viewState.VA_CANTIDADDVCMXBX_519401.visible" ng-readonly="vc.viewState.VA_CANTIDADDVCMXBX_519401.readonly" ng-class="vc.viewState.VA_CANTIDADDVCMXBX_519401.style" data-cobis-group="Group,G_BUSCARPRRD_366401,0" ng-model-onblur data-validation-code="{{vc.viewState.VA_CANTIDADDVCMXBX_519401.validationCode}}" /> 
+         </div> 
+        </div> 
+       </div> 
+       <div class="col-xs-6" ng-show="vc.viewState.VA_VABUTTONPUDBETJ_974401.visible"> 
+        <div class="form-group"> 
+         <label class="control-label">&nbsp;</label> 
+         <div class="cb-control"> 
+          <button id="VA_VABUTTONPUDBETJ_974401" class="btn btn-default btn-block" ng-click="vc.executeCommand('VA_VABUTTONPUDBETJ_974401','VA_VABUTTONPUDBETJ_974401',validator,false, false,'', false)" ng-disabled="vc.viewState.VA_VABUTTONPUDBETJ_974401.disabled || vc.viewState.VA_VABUTTONPUDBETJ_974401.disabledingroup" ng-show="vc.viewState.VA_VABUTTONPUDBETJ_974401.visible" ng-class="vc.viewState.VA_VABUTTONPUDBETJ_974401.style"> {{vc.viewState.VA_VABUTTONPUDBETJ_974401.label|translate}} </button> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <!-- Fin item VW_BUSCARPROT_401--> 
+  <div class="cb-view-loading cb-view-loading-preload"> 
+   <div class="cb-view-loading-icon"></div> 
+  </div> 
+  <div class="cb-navbar cb-navbar-bottom" ng-if="vc.childVc && vc.autoSyncNavigation"> 
+   <nav ng-class="vc.getCssClass('',['navbar', 'navbar-default'] ,{'navbar-fixed-bottom': (!vc.isModal(this) && !vc.isDetailGrid(this))})"> 
+    <button id="T_FRONTRSWJDXFZ_368_ACCEPT" class="btn btn-primary navbar-btn" ng-click="vc.accept(validator, $event, false, 'VC_BUSCARPROD_668368')" ng-disabled="vc.viewState.T_FRONTRSWJDXFZ_368_ACCEPT.disabled || vc.viewState.T_FRONTRSWJDXFZ_368_ACCEPT.disabledingroup" ng-show="vc.viewState.T_FRONTRSWJDXFZ_368_ACCEPT.visible" ng-class="vc.viewState.T_FRONTRSWJDXFZ_368_ACCEPT.style">{{'DSGNR.SYS_DSGNR_LBLACEPT0_00007'|translate}}</button> 
+    <button id="T_FRONTRSWJDXFZ_368_CANCEL" class="btn btn-default navbar-btn" ng-click="vc.cancel(validator, $event)" ng-disabled="vc.viewState.T_FRONTRSWJDXFZ_368_CANCEL.disabled || vc.viewState.T_FRONTRSWJDXFZ_368_CANCEL.disabledingroup" ng-show="vc.viewState.T_FRONTRSWJDXFZ_368_CANCEL.visible" ng-class="vc.viewState.T_FRONTRSWJDXFZ_368_CANCEL.style">{{'DSGNR.SYS_DSGNR_LBLCANCEL_00006'|translate}}</button> 
+   </nav> 
+  </div>
+ </body>
+</html>
