@@ -36,6 +36,51 @@ task.executeQuery.Q_CLIETTTN_SG94 = function(executeQueryEventArgs){
     //executeQueryEventArgs.commons.serverParameters.Cliente = true;
 };
 
+	
+//gridRowDeleting QueryView: QV_BN94_GSD54
+//Se ejecuta antes de que los datos eliminados en una grilla sean comprometidos.
+task.gridRowDeleting.QV_BN94_GSD54 = function (entities,gridRowDeletingEventArgs) {
+
+     gridRowDeletingEventArgs.commons.execServer = true;
+     //gridRowDeletingEventArgs.commons.serverParameters.Cliente = true;
+
+};
+
+
+
+
+
+
+	
+//gridRowInserting QueryView: QV_BN94_GSD54
+//Se ejecuta antes de que los datos insertados en una grilla sean comprometidos.
+task.gridRowInserting.QV_BN94_GSD54 = function (entities,gridRowInsertingEventArgs) {
+
+     gridRowInsertingEventArgs.commons.execServer = true;
+     //gridRowInsertingEventArgs.commons.serverParameters.Cliente = true;
+
+};
+
+
+
+
+
+
+	
+//gridRowUpdating QueryView: QV_BN94_GSD54
+//Se ejecuta antes de que los datos modificados en una grilla sean comprometidos.
+task.gridRowUpdating.QV_BN94_GSD54 = function (entities,gridRowUpdatingEventArgs) {
+
+     gridRowUpdatingEventArgs.commons.execServer = true;
+     //gridRowUpdatingEventArgs.commons.serverParameters.Cliente = true;
+
+};
+
+
+
+
+
+
 
 
 }));
