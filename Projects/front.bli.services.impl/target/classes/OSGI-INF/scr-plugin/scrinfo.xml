@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component enabled="true" name="com.cobiscorp.cobis.front.bli.services.impl.BLI2135_bli_insertarcliente">
+        <implementation class="com.cobiscorp.cobis.front.bli.services.impl.BLI2135_bli_insertarcliente"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.bli.api.IBLIExecutor"/>
+        </service>
+        <property name="task.module" type="String" value="FRONT" private="false"/>
+        <property name="bli.id" type="String" value="BLI2135_bli_insertarcliente" private="false"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.front.bli.services.impl.BLI2135_bli_insertarcliente" private="false"/>
+    </scr:component>
+    <scr:component enabled="true" name="com.cobiscorp.cobis.front.bli.services.impl.BLI3159_bli_buscarproducto">
+        <implementation class="com.cobiscorp.cobis.front.bli.services.impl.BLI3159_bli_buscarproducto"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.bli.api.IBLIExecutor"/>
+        </service>
+        <property name="task.module" type="String" value="FRONT" private="false"/>
+        <property name="bli.id" type="String" value="BLI3159_bli_buscarproducto" private="false"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.front.bli.services.impl.BLI3159_bli_buscarproducto" private="false"/>
+    </scr:component>
+    <scr:component enabled="true" name="com.cobiscorp.cobis.front.bli.services.impl.BLI3203_bli_mostarproducto">
+        <implementation class="com.cobiscorp.cobis.front.bli.services.impl.BLI3203_bli_mostarproducto"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.bli.api.IBLIExecutor"/>
+        </service>
+        <property name="task.module" type="String" value="FRONT" private="false"/>
+        <property name="bli.id" type="String" value="BLI3203_bli_mostarproducto" private="false"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.front.bli.services.impl.BLI3203_bli_mostarproducto" private="false"/>
+    </scr:component>
+    <scr:component enabled="true" name="com.cobiscorp.cobis.front.bli.services.impl.BLI3835_bli_mostarcliente">
+        <implementation class="com.cobiscorp.cobis.front.bli.services.impl.BLI3835_bli_mostarcliente"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.bli.api.IBLIExecutor"/>
+        </service>
+        <property name="task.module" type="String" value="FRONT" private="false"/>
+        <property name="bli.id" type="String" value="BLI3835_bli_mostarcliente" private="false"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.front.bli.services.impl.BLI3835_bli_mostarcliente" private="false"/>
+    </scr:component>
+    <scr:component enabled="true" name="com.cobiscorp.cobis.front.bli.services.impl.BLI4302_bli_actualizarcliente">
+        <implementation class="com.cobiscorp.cobis.front.bli.services.impl.BLI4302_bli_actualizarcliente"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.bli.api.IBLIExecutor"/>
+        </service>
+        <property name="task.module" type="String" value="FRONT" private="false"/>
+        <property name="bli.id" type="String" value="BLI4302_bli_actualizarcliente" private="false"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.front.bli.services.impl.BLI4302_bli_actualizarcliente" private="false"/>
+    </scr:component>
+    <scr:component enabled="true" name="com.cobiscorp.cobis.front.bli.services.impl.BLI4620_bli_buscarcliente">
+        <implementation class="com.cobiscorp.cobis.front.bli.services.impl.BLI4620_bli_buscarcliente"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.bli.api.IBLIExecutor"/>
+        </service>
+        <property name="task.module" type="String" value="FRONT" private="false"/>
+        <property name="bli.id" type="String" value="BLI4620_bli_buscarcliente" private="false"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.front.bli.services.impl.BLI4620_bli_buscarcliente" private="false"/>
+    </scr:component>
+    <scr:component enabled="true" name="com.cobiscorp.cobis.front.bli.services.impl.BLI5399_bli_actualizarproducto">
+        <implementation class="com.cobiscorp.cobis.front.bli.services.impl.BLI5399_bli_actualizarproducto"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.bli.api.IBLIExecutor"/>
+        </service>
+        <property name="task.module" type="String" value="FRONT" private="false"/>
+        <property name="bli.id" type="String" value="BLI5399_bli_actualizarproducto" private="false"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.front.bli.services.impl.BLI5399_bli_actualizarproducto" private="false"/>
+    </scr:component>
+    <scr:component enabled="true" name="com.cobiscorp.cobis.front.bli.services.impl.BLI6230_bli_insertarproducto">
+        <implementation class="com.cobiscorp.cobis.front.bli.services.impl.BLI6230_bli_insertarproducto"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.bli.api.IBLIExecutor"/>
+        </service>
+        <property name="task.module" type="String" value="FRONT" private="false"/>
+        <property name="bli.id" type="String" value="BLI6230_bli_insertarproducto" private="false"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.front.bli.services.impl.BLI6230_bli_insertarproducto" private="false"/>
+    </scr:component>
+    <scr:component enabled="true" name="com.cobiscorp.cobis.front.bli.services.impl.BLI7075_bli_eliminarproducto">
+        <implementation class="com.cobiscorp.cobis.front.bli.services.impl.BLI7075_bli_eliminarproducto"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.bli.api.IBLIExecutor"/>
+        </service>
+        <property name="task.module" type="String" value="FRONT" private="false"/>
+        <property name="bli.id" type="String" value="BLI7075_bli_eliminarproducto" private="false"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.front.bli.services.impl.BLI7075_bli_eliminarproducto" private="false"/>
+    </scr:component>
+    <scr:component enabled="true" name="com.cobiscorp.cobis.front.bli.services.impl.BLI9836_bli_eliminarcliente">
+        <implementation class="com.cobiscorp.cobis.front.bli.services.impl.BLI9836_bli_eliminarcliente"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.bli.api.IBLIExecutor"/>
+        </service>
+        <property name="task.module" type="String" value="FRONT" private="false"/>
+        <property name="bli.id" type="String" value="BLI9836_bli_eliminarcliente" private="false"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.front.bli.services.impl.BLI9836_bli_eliminarcliente" private="false"/>
+    </scr:component>
+</components>
