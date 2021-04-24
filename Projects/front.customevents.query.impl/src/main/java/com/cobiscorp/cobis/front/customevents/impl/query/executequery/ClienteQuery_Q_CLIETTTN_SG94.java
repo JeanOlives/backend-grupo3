@@ -17,13 +17,18 @@ import java.util.List;
 import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Properties;
 import org.apache.felix.scr.annotations.Property;
+import org.apache.felix.scr.annotations.Reference;
+import org.apache.felix.scr.annotations.ReferenceCardinality;
 import org.apache.felix.scr.annotations.Service;
 import com.cobiscorp.cobis.commons.domains.log.ILogger;
 import com.cobiscorp.cobis.commons.log.LogFactory;
+import com.cobiscorp.cobis.front.model.Cliente;
+import com.cobiscorp.cobis.front.model.Producto;
 import com.cobiscorp.designer.api.DynamicRequest;
 import com.cobiscorp.designer.api.customization.IExecuteQuery;
 import com.cobiscorp.designer.api.customization.arguments.IExecuteQueryEventArgs;
 import com.cobiscorp.designer.api.managers.DesignerManagerException;
+import com.cobiscorp.designer.bli.api.IBLIExecutor;
 
 @Component
 @Service({ IExecuteQuery.class })
@@ -37,17 +42,36 @@ public class ClienteQuery_Q_CLIETTTN_SG94 implements IExecuteQuery {
 	 */
 	private static final ILogger logger = LogFactory.getLogger(ClienteQuery_Q_CLIETTTN_SG94.class);
 
+	@Reference(bind="setBliMostrarClientes" , 
+			unbind="unsetBliMostrarClientes",
+			cardinality = ReferenceCardinality.MANDATORY_UNARY,
+			target = "(bli.id=BLI3835_bli_mostarcliente)")
+	private IBLIExecutor bliMostrarclientes;
+	
+	private void setBliMostrarClientes(IBLIExecutor bliMostrarclientes){
+		this.bliMostrarclientes = bliMostrarclientes;
+	}
+	
+	private void unsetBliMostrarClientes(IBLIExecutor bliMostrarclientes){
+		this.bliMostrarclientes = null;
+	}
+
 	@Override
 	public List<?> executeDataEvent(DynamicRequest arg0, IExecuteQueryEventArgs arg1) {
 		// TODO Auto-generated method stub
 		try {
 			if (logger.isDebugEnabled()) {
-				logger.logDebug("Start executeDataEvent in ClienteQuery_Q_CLIETTTN_SG94");
+				logger.logDebug("Start executeDataEvent in ClienteQuery_Q_CLIEEETN_WV88");
+				logger.logDebug("GRUPO3 ejecutando BLI... ");
 			}
+			bliMostrarclientes.execute(arg0);
+			logger.logDebug("GRUPO3 termina ejecucion de BLI... ");
+			
 		} catch (Exception ex) {
 			DesignerManagerException.handleException(arg1.getMessageManager(), ex, logger);
 		}
-		return null;
+		return arg0.getEntityList(Cliente.ENTITY_NAME).getDataList();
+	
 	}
 
 }
