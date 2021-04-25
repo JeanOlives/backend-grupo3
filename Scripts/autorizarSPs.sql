@@ -66,3 +66,4 @@ exec sp_gr3_autorizar_sps @i_operacion = 'I', @i_nombre_sp = 'sp_gr3_cliente', @
 exec sp_gr3_autorizar_sps @i_operacion = 'I', @i_nombre_sp = 'sp_gr3_reporte', @i_nombre_archivo = 'spgr3reporte.sp', @i_id_tr = 163030021
 exec sp_gr3_autorizar_sps @i_operacion = 'I', @i_nombre_sp = 'sp_gr3_producto', @i_nombre_archivo = 'spgr3producto.sp', @i_id_tr = 163030022 
 exec sp_gr3_autorizar_sps @i_operacion = 'I', @i_nombre_sp = 'sp_gr3_factura', @i_nombre_archivo = 'spgr3facturasp', @i_id_tr = 163030023
+exec sp_gr3_autorizar_sps @i_operacion = 'I', @i_nombre_sp = 'sp_gr3_reporte', @i_nombre_archivo = 'spgr3reportesp', @i_id_tr =163030030
