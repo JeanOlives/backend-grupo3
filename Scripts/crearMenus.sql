@@ -86,7 +86,7 @@ go
 declare @w_id_menu int
 select @w_id_menu = me_id from cew_menu where me_name = 'MNU_GR3_FACTURA'
 exec sp_gr3_crear_menus
-	@i_url 							= 'views/FRONT/ENDDD/T_FRONTTOIWYMVS_510/1.0.0/VC_CLIENTEDAD_206714_TASK.html', 
+	@i_url 							= 'views/FRONT/ENDDD/T_FRONTKNVSTNQU_714/1.0.0/VC_CLIENTEDAD_206714_TASK.html?mode=2', 
 	@i_id_parent 					= @w_id_menu, 
 	@i_name 						= 'MNU_GR3_CLIENTES', 
 	@i_description 					= 'Menu clientes del grupo 3', 
@@ -96,7 +96,7 @@ go
 declare @w_id_menu int
 select @w_id_menu = me_id from cew_menu where me_name = 'MNU_GR3_FACTURA'
 exec sp_gr3_crear_menus 
-	@i_url 							= 'views/FRONT/ENDDD/T_FRONTTOIWYMVS_510/1.0.0/VC_PRODUCTODL_177796_TASK.html', 
+	@i_url 							= 'views/FRONT/ENDDD/T_FRONTCKYWUYUY_796/1.0.0/VC_PRODUCTODL_177796_TASK.html?mode=2', 
 	@i_id_parent 					= @w_id_menu, 
 	@i_name 						= 'MNU_GR3_PRODUCTOS', 
 	@i_description 					= 'Menu productos del grupo 3', 
@@ -110,5 +110,25 @@ exec sp_gr3_crear_menus
 	@i_id_parent 					= @w_id_menu, 
 	@i_name 						= 'MNU_GR3_FACTURACION', 
 	@i_description 					= 'Menu facturacion del grupo 3', 
+	@i_operacion					= 'I'
+go
+
+declare @w_id_menu int
+select @w_id_menu = me_id from cew_menu where me_name = 'MNU_GR3_FACTURA'
+exec sp_gr3_crear_menus 
+	@i_url 							= 'views/FRONT/RPRTS/T_FRONTXKSRGICE_229/1.0.0/VC_FACRURASLC_616229_TASK.html',
+	@i_id_parent 					= @w_id_menu, 
+	@i_name 						= 'MNU_GR3_REP_CLIENTE', 
+	@i_description 					= 'Menu reporte clientes del grupo 3', 
+	@i_operacion					= 'I'
+go
+
+declare @w_id_menu int
+select @w_id_menu = me_id from cew_menu where me_name = 'MNU_GR3_FACTURA'
+exec sp_gr3_crear_menus 
+	@i_url 							= 'views/FRONT/RPRTS/T_FRONTRXLWDAZW_187/1.0.0/VC_FACTURASEH_703187_TASK.html', 
+	@i_id_parent 					= @w_id_menu, 
+	@i_name 						= 'MNU_GR3_REP_FECHAS', 
+	@i_description 					= 'Menu reporte fechas del grupo 3', 
 	@i_operacion					= 'I'
 go
