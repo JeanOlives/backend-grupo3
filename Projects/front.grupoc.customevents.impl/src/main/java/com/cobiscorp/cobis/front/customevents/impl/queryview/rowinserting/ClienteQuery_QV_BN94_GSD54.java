@@ -37,17 +37,17 @@ public class ClienteQuery_QV_BN94_GSD54 implements IGridRowInserting {
 	 * Instancia de Logger
 	 */
 	private static final ILogger logger = LogFactory.getLogger(ClienteQuery_QV_BN94_GSD54.class);
-	@Reference(bind="setBliInsertarClientes" , 
-			unbind="unsetBliInsertarClientes",
+	@Reference(bind="setBliInsertarCliente" , 
+			unbind="unsetBliInsertarCliente",
 			cardinality = ReferenceCardinality.MANDATORY_UNARY,
 			target = "(bli.id=BLI2135_bli_insertarcliente)")
 	private IBLIExecutor bliInsertarCliente;
 	
-	private void setBliInsertarClientes(IBLIExecutor bliInsertarClientes){
+	private void setBliInsertarCliente(IBLIExecutor bliInsertarClientes){
 		this.bliInsertarCliente = bliInsertarCliente;
 	}
 	
-	private void unsetBliInsertarClientes(IBLIExecutor bliInsertarClientes){
+	private void unsetBliInsertarCliente(IBLIExecutor bliInsertarClientes){
 		this.bliInsertarCliente = null;
 	}
 

@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 TFS-BuildDate: 2020-11-20 11:37:21
 Bundle-SymbolicName: com.cobiscorp.cobis-front.customevents.query.impl
  -1.0.0
-Built-By: dario
+Built-By: dylan
 Bundle-ManifestVersion: 2
 Bundle-Vendor: COBISCORP
 TFS-RepositoryName: https://tfs.cobiscorp.com/tfs/DefaultCollection/CO
@@ -22,5 +22,5 @@ Export-Package: com.cobiscorp.cobis.front.customevents.impl.query.exec
 Bundle-Name: com.cobiscorp.cobis-front.customevents.query.impl
 Bundle-Version: 1.0.0
 Created-By: Maven Integration for Eclipse
-Build-Jdk: 15.0.2
+Build-Jdk: 1.8.0_271
 
