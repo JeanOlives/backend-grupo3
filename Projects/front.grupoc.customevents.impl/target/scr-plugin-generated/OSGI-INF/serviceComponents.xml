@@ -9,6 +9,16 @@
         <property name="service.pid" value="com.cobiscorp.cobis.front.customevents.impl.queryview.rowdeleting.ClienteQuery_QV_BN94_GSD54"/>
         <reference name="bliEliminarCliente" interface="com.cobiscorp.designer.bli.api.IBLIExecutor" cardinality="1..1" policy="static" target="(bli.id=BLI9836_bli_eliminarcliente)" bind="setBliEliminarCliente" unbind="unsetBliEliminarCliente"/>
     </scr:component>
+    <scr:component enabled="true" name="com.cobiscorp.cobis.front.customevents.impl.queryview.rowdeleting.ProductoQuery_QV_VD43_EWG54">
+        <implementation class="com.cobiscorp.cobis.front.customevents.impl.queryview.rowdeleting.ProductoQuery_QV_VD43_EWG54"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.api.customization.IGridRowDeleting"/>
+        </service>
+        <property name="queryView.id" type="String" value="QV_VD43_EWG54"/>
+        <property name="queryView.controlId" type="String" value="QV_VD43_EWG54"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.front.customevents.impl.queryview.rowdeleting.ProductoQuery_QV_VD43_EWG54"/>
+        <reference name="bliEliminarProducto" interface="com.cobiscorp.designer.bli.api.IBLIExecutor" cardinality="1..1" policy="static" target="(bli.id=BLI7075_bli_eliminarproducto)" bind="setBliEliminarProducto" unbind="unsetBliEliminarProducto"/>
+    </scr:component>
     <scr:component enabled="true" name="com.cobiscorp.cobis.front.customevents.impl.queryview.rowinserting.ClienteQuery_QV_BN94_GSD54">
         <implementation class="com.cobiscorp.cobis.front.customevents.impl.queryview.rowinserting.ClienteQuery_QV_BN94_GSD54"/>
         <service servicefactory="false">
@@ -48,6 +58,17 @@
         <property name="view.version" type="String" value="1.0.0"/>
         <property name="view.controlId" type="String" value="VA_VABUTTONFKUAKJO_460877"/>
         <property name="service.pid" value="com.cobiscorp.cobis.front.customevents.impl.view.executecommand.VA_VABUTTONFKUAKJO_460877"/>
+    </scr:component>
+    <scr:component enabled="true" name="com.cobiscorp.cobis.front.customevents.impl.view.executecommand.VA_VABUTTONUQWOURI_965207">
+        <implementation class="com.cobiscorp.cobis.front.customevents.impl.view.executecommand.VA_VABUTTONUQWOURI_965207"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.api.customization.IExecuteCommand"/>
+        </service>
+        <property name="view.id" type="String" value="VW_INGRESARRR_207"/>
+        <property name="view.version" type="String" value="1.0.0"/>
+        <property name="view.controlId" type="String" value="VA_VABUTTONUQWOURI_965207"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.front.customevents.impl.view.executecommand.VA_VABUTTONUQWOURI_965207"/>
+        <reference name="bliActualizarProducto" interface="com.cobiscorp.designer.bli.api.IBLIExecutor" cardinality="1..1" policy="static" target="(bli.id=BLI5399_bli_actualizarproducto)" bind="setBliActualizarProducto" unbind="unsetBliActualizarProducto"/>
     </scr:component>
     <scr:component enabled="true" name="com.cobiscorp.cobis.front.customevents.impl.view.executecommand.VA_VABUTTONZZNRUDQ_359207">
         <implementation class="com.cobiscorp.cobis.front.customevents.impl.view.executecommand.VA_VABUTTONZZNRUDQ_359207"/>
