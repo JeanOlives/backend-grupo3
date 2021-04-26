@@ -1,11 +1,6 @@
-
-use cobis 
-go
-
-
-if exists(select 1 from sysobjects where name='sp_gr3_factura')
-	drop procedure sp_gr3_factura
-go
+IF OBJECT_ID ('dbo.sp_gr3_factura') IS NOT NULL
+	DROP PROCEDURE dbo.sp_gr3_factura
+GO
 
 create procedure sp_gr3_factura
    @s_srv                   varchar(30) = null,
@@ -54,7 +49,33 @@ begin
 		values
 		(getdate(),		0,		@i_cedula)
 		
+	select @o_codigo = (select max(cf_codigo) from gr3_factura_cabecera)
+		
 end
+
+
+if @i_operacion = 'U'
+begin
+	
+	if @i_cf_codigo is null
+	begin
+		-- error:ingrese codigo
+		select @w_error = 1720661
+		goto ERROR_FIN
+	end
+	
+	update gr3_factura_cabecera
+		set cf_total = @i_total,
+			cli_cedula = @i_cedula
+	where cf_codigo = @i_cf_codigo
+	
+	if @@rowcount != 0
+		select @o_codigo = @i_cf_codigo
+	else
+		select @o_codigo = 0
+	
+end
+
 
 
 if @i_operacion = 'A'
@@ -84,16 +105,6 @@ begin
 		select @w_error = 1720369
 		goto ERROR_FIN
 	end
-	
-	if @i_total is null
-	begin
-		select @w_error = 1720369
-		goto ERROR_FIN
-	end
-	
-	update gr3_factura_cabecera
-		set cf_total 	= @i_total
-		where cf_codigo = @i_cf_codigo
 	
 	insert into gr3_factura_detalle
 		(df_cantidad, df_subtotal, cf_codigo, 	pro_codigo)
@@ -129,6 +140,25 @@ begin
 	delete from gr3_factura_cabecera
 	where cf_codigo =  @i_cf_codigo
 end
+
+
+if @i_operacion = 'S'
+begin
+	select
+		'codigoProducto'	= pr.pro_codigo,
+		'producto'				  = pr.pro_nombre,
+		'precio'					 = pr.pro_nombre,
+		'cantidad'				   = fd.df_cantidad,
+		'subtotal'					= fd.df_subtotal
+		from
+		   gr3_factura_detalle as fd 
+		   join 
+		   gr3_producto as pr
+		   on(pr.pro_codigo= fd.pro_codigo)
+		where
+			 fd.df_codigo = @i_cf_codigo
+end
+
 return 0
 
 ERROR_FIN:
@@ -140,3 +170,7 @@ begin
    @i_num    = @w_error 
 end
 return @w_error
+
+
+GO
+
