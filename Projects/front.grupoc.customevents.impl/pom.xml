@@ -218,5 +218,10 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+		<dependency>
+			<artifactId>front.domains</artifactId>
+			<groupId>com.cobiscorp.cobis</groupId>
+			<version>1.0.0</version>
+		</dependency>
 	<dependency><groupId>com.cobiscorp.designer</groupId><artifactId>cobis-designer-bli-commons</artifactId><version>1.0.2</version></dependency></dependencies>
 </project>
