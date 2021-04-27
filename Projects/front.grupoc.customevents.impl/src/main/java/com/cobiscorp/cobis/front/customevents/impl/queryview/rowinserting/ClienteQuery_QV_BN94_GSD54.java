@@ -44,7 +44,7 @@ public class ClienteQuery_QV_BN94_GSD54 implements IGridRowInserting {
 	private IBLIExecutor bliInsertarCliente;
 	
 	private void setBliInsertarClientes(IBLIExecutor bliInsertarClientes){
-		this.bliInsertarCliente = bliInsertarCliente;
+		this.bliInsertarCliente = bliInsertarClientes;
 	}
 	
 	private void unsetBliInsertarClientes(IBLIExecutor bliInsertarClientes){
