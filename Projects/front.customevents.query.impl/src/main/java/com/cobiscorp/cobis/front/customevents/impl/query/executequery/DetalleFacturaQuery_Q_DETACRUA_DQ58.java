@@ -17,13 +17,17 @@ import java.util.List;
 import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Properties;
 import org.apache.felix.scr.annotations.Property;
+import org.apache.felix.scr.annotations.Reference;
+import org.apache.felix.scr.annotations.ReferenceCardinality;
 import org.apache.felix.scr.annotations.Service;
 import com.cobiscorp.cobis.commons.domains.log.ILogger;
 import com.cobiscorp.cobis.commons.log.LogFactory;
+import com.cobiscorp.cobis.front.model.DetalleFactura;
 import com.cobiscorp.designer.api.DynamicRequest;
 import com.cobiscorp.designer.api.customization.IExecuteQuery;
 import com.cobiscorp.designer.api.customization.arguments.IExecuteQueryEventArgs;
 import com.cobiscorp.designer.api.managers.DesignerManagerException;
+import com.cobiscorp.designer.bli.api.IBLIExecutor;
 
 @Component
 @Service({ IExecuteQuery.class })
@@ -36,6 +40,19 @@ public class DetalleFacturaQuery_Q_DETACRUA_DQ58 implements IExecuteQuery {
 	 * Instancia de Logger
 	 */
 	private static final ILogger logger = LogFactory.getLogger(DetalleFacturaQuery_Q_DETACRUA_DQ58.class);
+	
+	@Reference(bind ="setBliMostarDetalles",                			
+			   unbind="unsetBliMostarDetalles",					
+			   cardinality=ReferenceCardinality.MANDATORY_UNARY,
+			   target="(bli.id=BLI8857_bli_mostardetalles)")			
+	private IBLIExecutor bliMostarDetalles;                       		 
+	
+	public void setBliMostarDetalles(IBLIExecutor bliMostarDetalles){
+		this.bliMostarDetalles =bliMostarDetalles;
+	}
+	public void unsetBliMostarDetalles(IBLIExecutor bliMostarDetalles){
+		this.bliMostarDetalles = null;
+	}
 
 	@Override
 	public List<?> executeDataEvent(DynamicRequest arg0, IExecuteQueryEventArgs arg1) {
@@ -44,10 +61,13 @@ public class DetalleFacturaQuery_Q_DETACRUA_DQ58 implements IExecuteQuery {
 			if (logger.isDebugEnabled()) {
 				logger.logDebug("Start executeDataEvent in DetalleFacturaQuery_Q_DETACRUA_DQ58");
 			}
+			bliMostarDetalles.execute(arg0);
+			logger.logDebug("SE EJECUTO BLI MOSTAR DETALLES");
+			
 		} catch (Exception ex) {
 			DesignerManagerException.handleException(arg1.getMessageManager(), ex, logger);
 		}
-		return null;
+		return arg0.getEntityList(DetalleFactura.ENTITY_NAME).getDataList();
 	}
 
 }
