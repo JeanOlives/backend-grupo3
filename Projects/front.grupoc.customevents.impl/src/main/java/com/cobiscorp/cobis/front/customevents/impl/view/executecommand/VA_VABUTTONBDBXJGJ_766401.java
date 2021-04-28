@@ -13,6 +13,8 @@
 
 package com.cobiscorp.cobis.front.customevents.impl.view.executecommand;
 
+import java.util.Map;
+
 import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Properties;
 import org.apache.felix.scr.annotations.Property;
@@ -67,11 +69,9 @@ public class VA_VABUTTONBDBXJGJ_766401 implements IExecuteCommand {
 				logger.logDebug("Start executeCommand in VA_VABUTTONBDBXJGJ_766401");
 			}
 			logger.logDebug("Hasta aqui todo bien");
-			
-			 
-			DataEntity detalleFactura = arg0.getEntity(DetalleFactura.ENTITY_NAME);
-			double cantidad = detalleFactura.get(DetalleFactura.CANTIDAD);
-			logger.logDebug("Cantidad: " + cantidad);
+			Map<String,Object> data = arg0.getData();
+			String codigoFactura = (String) (data.get("codigoDeFactura"));
+			logger.logDebug("Codigo Factura: " + codigoFactura);
 			
 			bliIngresarDetalle.execute(arg0);
 			logger.logDebug("Se Ejecuta la BLI INGRESAR DETALLE");

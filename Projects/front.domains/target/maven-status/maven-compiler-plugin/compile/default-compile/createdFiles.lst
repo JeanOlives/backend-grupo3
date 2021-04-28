@@ -1,0 +1,7 @@
+com\cobiscorp\cobis\front\model\DetalleFactura.class
+com\cobiscorp\cobis\front\model\Cliente.class
+com\cobiscorp\cobis\front\model\RangoFechas.class
+com\cobiscorp\cobis\front\model\BuscarCliente.class
+com\cobiscorp\cobis\front\model\FacturaReporte.class
+com\cobiscorp\cobis\front\model\Factura.class
+com\cobiscorp\cobis\front\model\Producto.class
