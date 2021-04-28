@@ -22,6 +22,7 @@ import org.apache.felix.scr.annotations.Service;
 import com.cobiscorp.cobis.commons.domains.log.ILogger;
 import com.cobiscorp.cobis.commons.log.LogFactory;
 import com.cobiscorp.designer.api.DataEntity;
+import com.cobiscorp.designer.api.DynamicRequest;
 import com.cobiscorp.designer.api.customization.IGridRowInserting;
 import com.cobiscorp.designer.api.customization.arguments.IGridRowActionEventArgs;
 import com.cobiscorp.designer.api.managers.DesignerManagerException;
@@ -44,7 +45,7 @@ public class ClienteQuery_QV_BN94_GSD54 implements IGridRowInserting {
 	private IBLIExecutor bliInsertarCliente;
 	
 	private void setBliInsertarClientes(IBLIExecutor bliInsertarClientes){
-		this.bliInsertarCliente = bliInsertarCliente;
+		this.bliInsertarCliente = bliInsertarClientes;
 	}
 	
 	private void unsetBliInsertarClientes(IBLIExecutor bliInsertarClientes){
@@ -59,7 +60,14 @@ public class ClienteQuery_QV_BN94_GSD54 implements IGridRowInserting {
 				logger.logDebug("Start rowAction in ClienteQuery_QV_BN94_GSD54");
 				logger.logDebug("GRUPO3 ejecutando BLI... ");
 			}
-			bliInsertarCliente.execute(arg1.getDynamicRequest());
+			DynamicRequest dynamicRequest = arg1.getDynamicRequest();
+			
+			if(dynamicRequest == null) {
+				logger.logDebug("<OBJETO arg1 es nulo>");
+			} else if(bliInsertarCliente == null) {
+				logger.logDebug("<LA BLI  es nula>");
+			}
+			bliInsertarCliente.execute(dynamicRequest);
 			logger.logDebug("GRUPO3 termina ejecucion de BLI... ");
 		} catch (Exception ex) {
 			DesignerManagerException.handleException(arg1.getMessageManager(), ex, logger);
